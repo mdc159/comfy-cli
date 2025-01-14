@@ -1,0 +1,29 @@
+custom_nodes:
+  cnr_custom_nodes:
+    cg-use-everywhere: 5.0.7
+    comfy-mtb: 0.2.1
+    comfyui-advanced-controlnet: 1.5.2
+    comfyui_controlnet_aux: 1.0.5
+    comfyui_essentials: 1.1.0
+    rgthree-comfy: 1.0.0
+  comfyui: b9d9bcba1418711f13d7e432605f85303d900723
+  file_custom_nodes:
+  - disabled: false
+    filename: websocket_image_save.py
+  git_custom_nodes:
+    https://github.com/NimaNzrii/comfyui-photoshop:
+      disabled: false
+      hash: c820203ed7a41cfde522bf9197550921c7a602cf
+    https://github.com/Stability-AI/stability-ComfyUI-nodes:
+      disabled: false
+      hash: 001154622564b17223ce0191803c5fff7b87146c
+    https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes:
+      disabled: false
+      hash: d78b780ae43fcf8c6b7c6505e6ffb4584281ceca
+    https://github.com/kadirnar/ComfyUI-YOLO:
+      disabled: false
+      hash: 8c7d8fd0e5eaa5569f04be1e8f4219801d682624
+    https://github.com/ltdrdata/ComfyUI-Manager:
+      disabled: false
+      hash: 9578ce08209038dfb88c23ed9faa77a1d415abb8
+  pips: {}

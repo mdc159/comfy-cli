@@ -52,6 +52,14 @@ share/python-wheels/
 .ruff_cache/
 tests/temp/
 
+# Virtual environments
+venv/
+.env/
+env/
+ENV/
+.venv/
+cli-env/
+
 venv/
 
 bisect_state.json
