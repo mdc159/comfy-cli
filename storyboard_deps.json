@@ -1,0 +1,33 @@
+{
+    "custom_nodes": {
+        "https://github.com/cubiq/ComfyUI_essentials": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/cubiq/ComfyUI_IPAdapter_plus": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/ltdrdata/ComfyUI-Impact-Pack": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/ltdrdata/ComfyUI-Impact-Subpack": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/kijai/ComfyUI-KJNodes": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/melMass/comfy_mtb": {
+            "state": "not-installed",
+            "hash": "-"
+        }
+    },
+    "unknown_nodes": []
+}

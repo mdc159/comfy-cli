@@ -1,4 +1,5 @@
 @echo off
-call X:\GitHub\comfy-cli\cli-env\Scripts\activate.bat
-comfy --workspace=X:\Diffusion\comfy launch
+cd X:\GitHub\comfy-cli
+call .\.venv-py311\Scripts\activate.bat
+comfy --workspace=X:\Diffusion\ComfyUI launch
 pause

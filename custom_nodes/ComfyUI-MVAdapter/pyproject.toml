@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "comfyui-mvadapter"
+version = "0.1.0"
+description = "MV-Adapter integration for ComfyUI"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+diffusers = ">=0.24.0"
+transformers = ">=4.35.0"
+accelerate = ">=0.24.0"
+safetensors = ">=0.4.0"
+opencv-python = ">=4.8.0"
+einops = ">=0.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = true
+path = ".venv-py311" 

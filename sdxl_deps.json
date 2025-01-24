@@ -1,0 +1,88 @@
+{
+    "custom_nodes": {
+        "https://github.com/ltdrdata/ComfyUI-Impact-Pack": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/huanngzh/ComfyUI-MVAdapter": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/cubiq/ComfyUI_IPAdapter_plus": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/Limitex/ComfyUI-Diffusers": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/chrisgoringe/cg-use-everywhere": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/ltdrdata/ComfyUI-Impact-Subpack": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/giriss/comfy-image-saver": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/lldacing/ComfyUI_BiRefNet_ll": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/kijai/ComfyUI-Florence2": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/cubiq/ComfyUI_essentials": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/yolain/ComfyUI-Easy-Use": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/kijai/ComfyUI-IC-Light": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/spacepxl/ComfyUI-Image-Filters": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/kijai/ComfyUI-KJNodes": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/rgthree/rgthree-comfy": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/WASasquatch/was-node-suite-comfyui": {
+            "state": "not-installed",
+            "hash": "-"
+        },
+        "https://github.com/KoreTeknology/ComfyUI-Universal-Styler": {
+            "state": "installed",
+            "hash": "-"
+        },
+        "https://github.com/liusida/ComfyUI-AutoCropFaces": {
+            "state": "installed",
+            "hash": "-"
+        }
+    },
+    "unknown_nodes": [
+        "SetNode",
+        "GetNode"
+    ]
+}

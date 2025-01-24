@@ -41,6 +41,7 @@ This enables you to type `comfy [TAP]` to autocomplete commands and options
 
 ## Usage
 
+
 ### Installing ComfyUI
 
 To install ComfyUI using comfy, simply run:

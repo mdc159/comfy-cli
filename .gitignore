@@ -69,3 +69,15 @@ requirements.compiled
 override.txt
 .coverage
 coverage.xml
+
+# Poetry specific
+poetry.lock
+.venv-py311/
+dist/
+*.pyc
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+.pytest_cache/

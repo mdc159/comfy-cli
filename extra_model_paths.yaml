@@ -1,0 +1,75 @@
+#Rename this to extra_model_paths.yaml and ComfyUI will load it
+
+#config for comfyui
+#your base path should be either an existing comfy install or a central folder where you store all of your models, loras, etc.
+
+comfyui:
+    base_path: X:/Diffusion/models
+    # Core model directories
+    checkpoints: ./checkpoints
+    clip: ./clip
+    clip_vision: ./clip_vision
+    configs: ./configs
+    controlnet: ./controlnet
+    diffusion_models: ./diffusion_models
+    embeddings: ./embeddings
+    loras: ./loras
+    vae: ./vae
+    
+    # Upscaler models
+    upscale_models: |
+        ./ESRGAN
+        ./RealESRGAN
+        ./SwinIR
+        ./upscale_models
+    
+    # Additional model directories
+    adetailer: ./adetailer
+    animatediff_models: ./animatediff_models
+    animatediff_motion_lora: ./animatediff_motion_lora
+    annotators: ./annotators
+    BLIP: ./BLIP
+    Codeformer: ./Codeformer
+    deepbooru: ./deepbooru
+    diffusers: ./diffusers
+    facedetection: ./facedetection
+    facerestore_models: ./facerestore_models
+    GFPGAN: ./GFPGAN
+    gligen: ./gligen
+    GPTcheckpoints: ./GPTcheckpoints
+    grounding-dino: ./grounding-dino
+    hypernetworks: ./hypernetworks
+    inpaint: ./inpaint
+    insightface: ./insightface
+    ipadapter: ./ipadapter
+    karlo: ./karlo
+    LDSR: ./LDSR
+    LLM: ./LLM
+    LLM_checkpoints: ./LLM_checkpoints
+    luts: ./luts
+    LyCORIS: ./LyCORIS
+    mimicmotion: ./mimicmotion
+    mmdets: ./mmdets
+    onnx: ./onnx
+    photomaker: ./photomaker
+    prompt_generator: ./prompt_generator
+    Pulid: ./Pulid
+    reactor: ./reactor
+    sam2: ./sam2
+    sams: ./sams
+    Stable-diffusion: ./Stable-diffusion
+    style_models: ./style_models
+    text_encoders: ./text_encoders
+    TheMisto_model: ./TheMisto_model
+    torch_deepdanbooru: ./torch_deepdanbooru
+    ultralytics: ./ultralytics
+    unet: ./unet
+    vae_approx: ./vae_approx
+    xlabs: ./xlabs
+
+
+#other_ui:
+#    base_path: path/to/ui
+#    checkpoints: models/checkpoints
+#    gligen: models/gligen
+#    custom_nodes: path/custom_nodes

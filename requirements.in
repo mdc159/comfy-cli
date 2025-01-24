@@ -1,0 +1,10 @@
+torch>=2.5.1
+torchvision>=0.20.1
+torchaudio>=2.5.1
+numpy<2.1.0
+xformers
+comfy-cli
+diffusers==0.24.0
+mediapipe
+streamdiffusion==0.1.1
+transparent-background 
