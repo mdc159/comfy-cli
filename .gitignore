@@ -52,14 +52,6 @@ share/python-wheels/
 .ruff_cache/
 tests/temp/
 
-# Virtual environments
-venv/
-.env/
-env/
-ENV/
-.venv/
-cli-env/
-
 venv/
 
 bisect_state.json
@@ -69,15 +61,3 @@ requirements.compiled
 override.txt
 .coverage
 coverage.xml
-
-# Poetry specific
-poetry.lock
-.venv-py311/
-dist/
-*.pyc
-
-# Coverage
-htmlcov/
-.coverage
-coverage.xml
-.pytest_cache/
