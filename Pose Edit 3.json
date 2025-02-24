@@ -1,0 +1,1171 @@
+{
+  "last_node_id": 150,
+  "last_link_id": 245,
+  "nodes": [
+    {
+      "id": 125,
+      "type": "RenderPeopleKps",
+      "pos": [
+        2867.4111328125,
+        -222.43748474121094
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "kps",
+          "type": "POSE_KEYPOINT",
+          "link": 236
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            227
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RenderPeopleKps"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 126,
+      "type": "PreviewImage",
+      "pos": [
+        3275.040283203125,
+        -231.77757263183594
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 227
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 130,
+      "type": "PreviewImage",
+      "pos": [
+        3298.8798828125,
+        246.47198486328125
+      ],
+      "size": [
+        247.9999542236328,
+        273.0000305175781
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 228
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 131,
+      "type": "RenderPeopleKps",
+      "pos": [
+        3059.25048828125,
+        262.8120422363281
+      ],
+      "size": [
+        210,
+        106
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "kps",
+          "type": "POSE_KEYPOINT",
+          "link": 232
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            228
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RenderPeopleKps"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 134,
+      "type": "LoadImage",
+      "pos": [
+        2355.4677734375,
+        259.9704284667969
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            233
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "030-topaz-faceai-enhance-2x.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 133,
+      "type": "DWPreprocessor",
+      "pos": [
+        2715.49853515625,
+        258.9292297363281
+      ],
+      "size": [
+        315,
+        222
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 233
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "POSE_KEYPOINT",
+          "type": "POSE_KEYPOINT",
+          "links": [
+            232
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DWPreprocessor"
+      },
+      "widgets_values": [
+        "enable",
+        "enable",
+        "enable",
+        512,
+        "yolox_l.onnx",
+        "dw-ll_ucoco_384_bs5.torchscript.pt",
+        "disable"
+      ]
+    },
+    {
+      "id": 128,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        1116.5084228515625,
+        819.0404663085938
+      ],
+      "size": [
+        252,
+        130
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 82,
+      "type": "DWPreprocessor",
+      "pos": [
+        467.95672607421875,
+        -275.0220642089844
+      ],
+      "size": [
+        403.4513244628906,
+        234.96267700195312
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 212
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            225
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "POSE_KEYPOINT",
+          "type": "POSE_KEYPOINT",
+          "links": [
+            191,
+            220,
+            221,
+            244
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DWPreprocessor"
+      },
+      "widgets_values": [
+        "enable",
+        "enable",
+        "enable",
+        512,
+        "yolox_l.onnx",
+        "dw-ll_ucoco_384_bs5.torchscript.pt",
+        "enable"
+      ]
+    },
+    {
+      "id": 145,
+      "type": "easy showAnything",
+      "pos": [
+        944.0699462890625,
+        -130.16058349609375
+      ],
+      "size": [
+        210,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 245
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      }
+    },
+    {
+      "id": 118,
+      "type": "RenderPeopleKps",
+      "pos": [
+        1199.3699951171875,
+        -154.395751953125
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "kps",
+          "type": "POSE_KEYPOINT",
+          "link": 221
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            222,
+            239
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RenderPeopleKps"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 110,
+      "type": "LoadAndResizeImage",
+      "pos": [
+        484.5373840332031,
+        69.14265441894531
+      ],
+      "size": [
+        315,
+        566
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            212
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            214
+          ],
+          "slot_index": 2
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            215
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "image_path",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadAndResizeImage"
+      },
+      "widgets_values": [
+        "ap17027021.jpg",
+        true,
+        512,
+        512,
+        1,
+        true,
+        8,
+        "alpha",
+        "",
+        "image"
+      ]
+    },
+    {
+      "id": 98,
+      "type": "Openpose Keypoint Extractor",
+      "pos": [
+        1123.4505615234375,
+        49.309417724609375
+      ],
+      "size": [
+        400,
+        208
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pose_keypoint",
+          "type": "POSE_KEYPOINT",
+          "link": 191
+        },
+        {
+          "name": "image_width",
+          "type": "INT",
+          "widget": {
+            "name": "image_width"
+          },
+          "link": 214
+        },
+        {
+          "name": "image_height",
+          "type": "INT",
+          "widget": {
+            "name": "image_height"
+          },
+          "link": 215
+        },
+        {
+          "name": "points_list",
+          "type": "STRING",
+          "widget": {
+            "name": "points_list"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x",
+          "type": "INT",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "y",
+          "type": "INT",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [],
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Openpose Keypoint Extractor"
+      },
+      "widgets_values": [
+        0,
+        0,
+        "",
+        2
+      ]
+    },
+    {
+      "id": 105,
+      "type": "easy imageSize",
+      "pos": [
+        1675.00927734375,
+        -267.7912902832031
+      ],
+      "size": [
+        306.4000549316406,
+        120.20004272460938
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 225
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width_int",
+          "type": "INT",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "height_int",
+          "type": "INT",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy imageSize"
+      },
+      "widgets_values": [
+        "Width: 780 , Height: 512"
+      ]
+    },
+    {
+      "id": 147,
+      "type": "Openpose Keypoint Extractor",
+      "pos": [
+        744.0699462890625,
+        -130.16058349609375
+      ],
+      "size": [
+        315,
+        98
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pose_keypoint",
+          "type": "POSE_KEYPOINT",
+          "link": 244
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            245
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Openpose Keypoint Extractor"
+      }
+    },
+    {
+      "id": 139,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1607.1943359375,
+        330.4649963378906
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 238
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "shape": 6,
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 119,
+      "type": "PreviewImage",
+      "pos": [
+        1304.6922607421875,
+        311.26507568359375
+      ],
+      "size": [
+        210,
+        246
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 222
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 115,
+      "type": "SavePoseKpsAsJsonFile",
+      "pos": [
+        1963.4749755859375,
+        15.473396301269531
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pose_kps",
+          "type": "POSE_KEYPOINT",
+          "link": 220
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SavePoseKpsAsJsonFile"
+      },
+      "widgets_values": [
+        "PoseKeypoint"
+      ]
+    },
+    {
+      "id": 146,
+      "type": "Any To String (mtb)",
+      "pos": [
+        744.0699462890625,
+        -130.16058349609375
+      ],
+      "size": [
+        180,
+        58
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "*",
+          "link": 244
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            245
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Any To String (mtb)"
+      }
+    },
+    {
+      "id": 148,
+      "type": "RenderPeopleKps",
+      "pos": [
+        744.0699462890625,
+        -130.16058349609375
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "kps",
+          "type": "POSE_KEYPOINT",
+          "link": 244
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            245
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RenderPeopleKps"
+      },
+      "widgets_values": [
+        512,
+        512,
+        "white",
+        8,
+        true
+      ]
+    },
+    {
+      "id": 150,
+      "type": "PreviewImage",
+      "pos": [
+        944.0699462890625,
+        -130.16058349609375
+      ],
+      "size": [
+        210,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 245
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 149,
+      "type": "ShowText|pysssss",
+      "pos": [
+        944.0699462890625,
+        -30.16058349609375
+      ],
+      "size": [
+        210,
+        50
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      }
+    }
+  ],
+  "links": [
+    [
+      64,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      65,
+      4,
+      2,
+      15,
+      1,
+      "VAE"
+    ],
+    [
+      66,
+      4,
+      0,
+      14,
+      0,
+      "MODEL"
+    ],
+    [
+      67,
+      6,
+      0,
+      14,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      68,
+      7,
+      0,
+      14,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      69,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      70,
+      4,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      71,
+      4,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      72,
+      6,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      73,
+      7,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      91,
+      4,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      92,
+      4,
+      2,
+      15,
+      1,
+      "VAE"
+    ],
+    [
+      93,
+      4,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      94,
+      6,
+      0,
+      14,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      95,
+      7,
+      0,
+      14,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      96,
+      6,
+      0,
+      45,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      97,
+      7,
+      0,
+      45,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      98,
+      4,
+      2,
+      45,
+      4,
+      "VAE"
+    ],
+    [
+      99,
+      4,
+      0,
+      41,
+      1,
+      "MODEL"
+    ],
+    [
+      100,
+      4,
+      1,
+      41,
+      2,
+      "CLIP"
+    ],
+    [
+      191,
+      82,
+      1,
+      98,
+      0,
+      "POSE_KEYPOINT"
+    ],
+    [
+      212,
+      110,
+      0,
+      82,
+      0,
+      "IMAGE"
+    ],
+    [
+      214,
+      110,
+      2,
+      98,
+      1,
+      "INT"
+    ],
+    [
+      215,
+      110,
+      3,
+      98,
+      2,
+      "INT"
+    ],
+    [
+      220,
+      82,
+      1,
+      115,
+      0,
+      "POSE_KEYPOINT"
+    ],
+    [
+      221,
+      82,
+      1,
+      118,
+      0,
+      "POSE_KEYPOINT"
+    ],
+    [
+      222,
+      118,
+      0,
+      119,
+      0,
+      "IMAGE"
+    ],
+    [
+      225,
+      82,
+      0,
+      105,
+      0,
+      "IMAGE"
+    ],
+    [
+      227,
+      125,
+      0,
+      126,
+      0,
+      "IMAGE"
+    ],
+    [
+      228,
+      131,
+      0,
+      130,
+      0,
+      "IMAGE"
+    ],
+    [
+      232,
+      133,
+      1,
+      131,
+      0,
+      "POSE_KEYPOINT"
+    ],
+    [
+      233,
+      134,
+      0,
+      133,
+      0,
+      "IMAGE"
+    ],
+    [
+      244,
+      82,
+      1,
+      148,
+      0,
+      "POSE_KEYPOINT"
+    ],
+    [
+      245,
+      148,
+      0,
+      150,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 8,
+      "title": "pose",
+      "bounding": [
+        457.9567565917969,
+        -348.6219787597656,
+        1830.517822265625,
+        993.7646484375
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "Render Pose",
+      "bounding": [
+        2351.58251953125,
+        -326.0260314941406,
+        1220.4560546875,
+        465.2557373046875
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 10,
+      "title": "Render",
+      "bounding": [
+        2333.233642578125,
+        172.86309814453125,
+        1220.4560546875,
+        465.2557373046875
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6830134553650712,
+      "offset": {
+        "0": 81.45043182373047,
+        "1": 380.5396728515625
+      }
+    },
+    "node_versions": {
+      "comfyui_controlnet_aux": "1.0.6",
+      "comfy-core": "0.3.15",
+      "comfyui-openpose-editor": "75ba64b5704e2f9f02accf4eee42b7458966d5d3",
+      "comfyui-easy-use": "1.2.7",
+      "comfyui-kjnodes": "1.0.5",
+      "comfyui-openpose-keypoint-extractor": "4cacb7a6c97f31c3c1ad686573342aba5fe0d5b3",
+      "comfy-mtb": "0.2.1",
+      "comfyui-custom-scripts": "1.1.1"
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
+  },
+  "version": 0.4
+}
